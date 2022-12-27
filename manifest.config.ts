@@ -15,7 +15,7 @@ export default defineManifest(() => {
     },
     content_scripts: [
       {
-        matches: ["http://*/*", "https://*/*"],
+        matches: ["https://chat.openai.com/*"],
         js: ["./src/content-scripts/main.ts"],
       },
     ],
